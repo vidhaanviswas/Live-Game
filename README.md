@@ -1,5 +1,7 @@
 # Memory Card Game
 
+Live link: https://card-game.up.railway.app/
+
 A modern web-based Memory Card Game with **Solo**, **Local Multiplayer**, and **Online Multiplayer** modes — built for real-time play and clear explainability (e.g. eLitmus Management Trainee evaluation).
 
 ---
