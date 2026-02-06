@@ -17,7 +17,7 @@ export default function Card({ card, index, isFlipped, isMatched, canFlip, onFli
       onClick={handleClick}
       disabled={!canFlip || isMatched || animating}
       className={`
-        relative h-24 w-20 sm:h-28 sm:w-24 rounded-xl perspective-1000
+        relative w-full aspect-[3/4] rounded-xl perspective-1000
         transition transform duration-200 hover:scale-[1.02] active:scale-[0.98]
         disabled:cursor-not-allowed disabled:hover:scale-100
         ${!canFlip && !isMatched ? 'opacity-80' : ''}
@@ -28,13 +28,13 @@ export default function Card({ card, index, isFlipped, isMatched, canFlip, onFli
         className={`card-inner relative w-full h-full transition-transform duration-300 ${showFront ? 'flipped' : ''}`}
       >
         <div
-          className="card-face card-back absolute inset-0 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-700 shadow-lg border-2 border-violet-400/50 flex items-center justify-center text-2xl font-bold text-white/90"
+          className="card-face card-back absolute inset-0 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-700 shadow-lg border-2 border-violet-400/50 flex items-center justify-center text-xl sm:text-2xl font-bold text-white/90"
           aria-hidden={showFront}
         >
           ?
         </div>
         <div
-          className={`card-face card-front absolute inset-0 rounded-xl border-2 flex items-center justify-center text-3xl font-bold shadow-inner
+          className={`card-face card-front absolute inset-0 rounded-xl border-2 flex items-center justify-center text-2xl sm:text-3xl font-bold shadow-inner
             ${isMatched ? 'bg-emerald-600/80 border-emerald-400 text-white' : 'bg-slate-700 border-slate-500 text-white'}
           `}
           aria-hidden={!showFront}

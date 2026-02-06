@@ -34,8 +34,8 @@ export default function Local() {
     : '';
 
   return (
-    <div className="min-h-screen p-4 font-display">
-      <div className="max-w-lg mx-auto">
+    <div className="min-h-screen p-4 sm:p-6 font-display">
+      <div className="max-w-2xl mx-auto">
         <div className="flex justify-between items-center mb-4">
           <Link to="/" className="text-slate-400 hover:text-white text-sm">← Home</Link>
         </div>

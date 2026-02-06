@@ -11,9 +11,9 @@ export default function Board({
 }) {
   return (
     <div
-      className="grid gap-2 sm:gap-3 p-4 justify-center"
+      className="grid grid-cols-4 gap-2 sm:gap-3 p-3 sm:p-4 w-full max-w-[520px] mx-auto"
       style={{
-        gridTemplateColumns: `repeat(4, minmax(0, 1fr))`,
+        gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
       }}
     >
       {deck.map((card, index) => (

@@ -162,8 +162,8 @@ export default function Play() {
   }
 
   return (
-    <div className="min-h-screen p-4 font-display">
-      <div className="max-w-lg mx-auto">
+    <div className="min-h-screen p-4 sm:p-6 font-display">
+      <div className="max-w-2xl mx-auto">
         <div className="flex justify-between items-center mb-2">
           <Link to="/" className="text-slate-400 hover:text-white text-sm">← Home</Link>
           <span className={`text-xs ${connected ? 'text-emerald-400' : 'text-red-400'}`}>
