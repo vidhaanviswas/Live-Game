@@ -158,7 +158,7 @@ const GAME_CONFIG = {
 
 ---
 
-## Deployment
+<!-- ## Deployment
 
 See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for step-by-step instructions (Railway for backend, Vercel or Netlify for frontend).
 
@@ -167,4 +167,4 @@ See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for step-by-step instructions (Railway 
 ## Interview Readiness
 
 - **2–3 minute explanation:** See **[INTERVIEW_SCRIPT.md](./INTERVIEW_SCRIPT.md)**.
-- **Live code changes:** See **[MODIFICATION_GUIDE.md](./MODIFICATION_GUIDE.md)** for where to change scoring, timer, players, leaderboard, and difficulty.
+- **Live code changes:** See **[MODIFICATION_GUIDE.md](./MODIFICATION_GUIDE.md)** for where to change scoring, timer, players, leaderboard, and difficulty. -->
