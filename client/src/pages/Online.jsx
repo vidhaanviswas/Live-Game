@@ -22,7 +22,8 @@ export default function Online() {
         setError(res.error);
         return;
       }
-      navigate(`/play?room=${res.roomId}`, { state: { room: res.room, inviteLink: res.inviteLink, isHost: true } });
+      const inviteLink = `${window.location.origin}/play?room=${res.roomId}`;
+      navigate(`/play?room=${res.roomId}`, { state: { room: res.room, inviteLink, isHost: true } });
     });
   };
 
@@ -35,7 +36,7 @@ export default function Online() {
         const url = new URL(id);
         id = url.searchParams.get('room') || id;
       }
-    } catch (_) {}
+    } catch (_) { }
     if (!id) {
       setError('Enter a room ID or use an invite link.');
       return;
